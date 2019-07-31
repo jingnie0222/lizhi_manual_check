@@ -12,8 +12,8 @@ import Mail
 import random
 
 
-top_word_loc = "http://10.143.54.80:81/vr_query_period/vr_query_pv.txt"
-random_word_loc = "http://10.143.54.80:81/vr_query_period/vr_query_random.txt"
+top_word_loc = "http://$ip/vr_query_period/vr_query_pv.txt"
+random_word_loc = "http://$ip/vr_query_period/vr_query_random.txt"
 
 top_word_file = "./word_top"
 random_word_file = "./word_random"
@@ -80,7 +80,7 @@ if __name__ == "__main__":
             report_content = ""
             mail_url = ""
 
-            mail_title = Template.html_h3_title("请检查如下url的首条立知结果，展示是否正确合理，点出跳转逻辑是否正确合理，如有问题请反馈至zhangjing200686@sogou-inc.com")
+            mail_title = Template.html_h3_title("请检查如下url的首条立知结果，展示是否正确合理，点出跳转逻辑是否正确合理，如有问题请反馈至xxx")
             mail_to = mail_lst[i]
 
             temp_url = dispatch_url(url_list, mail_count, i)
